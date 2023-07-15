@@ -1,18 +1,19 @@
-dateModified: 1679617195
+dateModified: 1689367061
 email:
-  fromEmail: info@putyourlightson.net
-  fromName: 'Craft Coding Challenge'
+  fromEmail: $CRAFT_CP_EMAIL
+  fromName: Semisto.org
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
-    0b13c242-c4bf-4365-b5d1-fd1fe51676d8: 'Public Schema'
+    0b13c242-c4bf-4365-b5d1-fd1fe51676d8: 'Public Schema' # Public Schema
     0d89c679-f6f5-42ae-8341-4bea917c6af7: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
     0779f354-f5d2-4f82-9a36-28a252f70ce4: 'Public Schema' # Public Schema
     31006d4c-2f40-498c-9a4c-69cff4fd4279: Common # Common
+    a2ec6326-fe21-4006-b4a2-d3184ee61e3f: 'Public Schema' # Public Schema
     b55012be-3f7f-4150-b59c-5a6623c00743: 'Public Schema' # Public Schema
     c7c2807b-84cc-4e1f-9279-af044bc0b472: 'Public Schema' # Public Schema
     f255ef6d-0c55-4bdc-9ced-f610bbb3bed6: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
@@ -25,7 +26,9 @@ system:
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
-  defaultGroup: null
+  deactivateByDefault: false
+  defaultGroup: ''
   photoSubpath: null
   photoVolumeUid: null
-  requireEmailVerification: true
+  requireEmailVerification: false
+  validateOnPublicRegistration: false
